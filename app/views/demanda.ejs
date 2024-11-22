@@ -1,0 +1,67 @@
+<div class="container mt-4">
+    <!-- Formulario para registrar demanda -->
+    <form action="/demanda" method="POST">
+        <div class="mb-3">
+            <label for="nombreCultivo" class="form-label">Nombre del cultivo</label>
+            <input type="text" class="form-control" id="nombreCultivo" name="nombreCultivo" placeholder="Ejemplo: Tomates" required>
+        </div>
+        <div class="mb-3">
+            <label for="cantidadRequerida" class="form-label">Cantidad requerida (kg)</label>
+            <input type="number" class="form-control" id="cantidadRequerida" name="cantidadRequerida" placeholder="Ejemplo: 200" required>
+        </div>
+        <div class="mb-3">
+            <label for="fechaEntrega" class="form-label">Fecha de entrega</label>
+            <input type="date" class="form-control" id="fechaEntrega" name="fechaEntrega" required>
+        </div>
+        <button type="submit" class="btn btn-success">Registrar demanda</button>
+    </form>
+
+    <hr>
+
+    <h3>Lista de demandas registradas</h3>
+
+    <div class="table-responsive small">
+        <table class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Cultivo</th>
+                    <th scope="col">Cantidad requerida</th>
+                    <th scope="col">Fecha de entrega</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tomates</td>
+                    <td>200 kg</td>
+                    <td>2024-11-05</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Papas</td>
+                    <td>300 kg</td>
+                    <td>2024-11-10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Maíz</td>
+                    <td>150 kg</td>
+                    <td>2024-11-12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lechugas</td>
+                    <td>100 kg</td>
+                    <td>2024-11-15</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Fresas</td>
+                    <td>50 kg</td>
+                    <td>2024-11-20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

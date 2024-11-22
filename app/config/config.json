@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Milena2650.",
+    "database": "agroanalitics",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Milena2650.",
+    "database": "agroanalitics",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Milena2650.",
+    "database": "agroanalitics",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+

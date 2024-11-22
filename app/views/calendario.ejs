@@ -1,0 +1,94 @@
+<div class="container-fluid my-4">
+    <div id="calendar" class=""></div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      locale: 'es',
+      headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
+      },
+      buttonText: {
+          today: 'Hoy',
+          month: 'Mes',
+          week: 'Semana',
+          day: 'Día',
+          list: 'Agenda'
+      },
+      events: [
+          {
+              title: 'Tomates',
+              start: '2024-11-01',
+              description: 'Cosecha de tomates en Parcela A',
+              color: '#ff9999'
+          },
+          {
+              title: 'Papas',
+              start: '2024-11-02',
+              description: 'Cosecha de papas en Parcela B',
+              color: '#99cc99'
+          },
+          {
+              title: 'Maíz',
+              start: '2024-11-05',
+              description: 'Cosecha de maíz en Parcela C',
+              color: '#66ccff'
+          },
+          {
+              title: 'Lechugas',
+              start: '2024-11-07',
+              description: 'Cosecha de lechugas en Parcela A',
+              color: '#ffccff'
+          },
+          {
+              title: 'Uvas',
+              start: '2024-11-10',
+              description: 'Cosecha de uvas en Parcela D',
+              color: '#ffcc00'
+          },
+          {
+              title: 'Fresas',
+              start: '2024-11-12',
+              description: 'Cosecha de fresas en Parcela E',
+              color: '#ff6666'
+          },
+          {
+              title: 'Pimientos',
+              start: '2024-11-15',
+              description: 'Cosecha de pimientos en Parcela B',
+              color: '#cc66cc'
+          },
+          {
+              title: 'Albahaca',
+              start: '2024-11-18',
+              description: 'Cosecha de albahaca en Parcela C',
+              color: '#99ccff'
+          },
+          {
+              title: 'Apio',
+              start: '2024-11-20',
+              description: 'Cosecha de apio en Parcela A',
+              color: '#66ff66'
+          },
+          {
+              title: 'Cebollas',
+              start: '2024-11-21',
+              description: 'Cosecha de cebollas en Parcela D',
+              color: '#ffcc99'
+          }
+      ],
+      
+      eventClick: function(info) {
+          alert('Cultivo: ' + info.event.title + '\nFecha: ' + info.event.start.toLocaleDateString() + '\nDescripción: ' + info.event.extendedProps.description);
+      }
+  });
+
+  calendar.render();
+});
+</script>
