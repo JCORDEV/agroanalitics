@@ -1,0 +1,69 @@
+.btn-success-custom {
+  background: transparent;
+  border: 0;
+  color: #198754;
+}
+
+/* modificaciones estilos fullcalendar */
+
+.fc-daygrid-day-number,
+.fc-col-header-cell-cushion {
+  text-decoration: none;
+}
+
+.fc-daygrid-day-number {
+  font-weight: bold;
+  color: #198754;
+}
+
+.fc-col-header-cell-cushion {
+  color: #14aa64cd;
+}
+
+.fc-button-primary {
+  background-color: #0c5e38 !important;
+  border: 0 !important;
+}
+
+.fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-toolbar-chunk {
+  flex: none;
+  text-align: initial;
+}
+
+@media (max-width: 768px) {
+  .fc-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .fc-toolbar .fc-toolbar-chunk {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .fc-toolbar-title {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fc-button {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}
+
+#calendar {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}

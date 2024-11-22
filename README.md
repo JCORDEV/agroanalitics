@@ -1,2 +1,2 @@
 # agroanalitics
-Plataforma digital para productores que gestiona cultivos, cosechas, insumos y demanda regional. Optimiza recursos, mejora sostenibilidad y permite planificar épocas de cosecha con precisión, considerando condiciones geográficas y necesidades del mercado, impulsando productividad y eficiencia agrícola.
+En AgroAnalytics, creemos que el futuro de la agricultura está en la inteligencia y la sostenibilidad. Nuestra plataforma avanzada utiliza análisis de datos y tecnología de vanguardia para optimizar cada aspecto del proceso agrícola, desde la siembra hasta la cosecha.
